@@ -426,6 +426,8 @@ video {
   font-family: Monserrat;
 
   src: url('../fonts/Montserrat-VariableFont_wght.ttf')format("truetype");
+
+  font-display: swap;
 }
 
 html {
@@ -1019,6 +1021,10 @@ html {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.blob-bg {
+  background-image: url('../images/blob-haikei.svg');
 }
 
 .hover\:scale-95:hover {
