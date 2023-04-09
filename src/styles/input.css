@@ -10,6 +10,7 @@
   @font-face {
     font-family: Monserrat;
     src: url('../fonts/Montserrat-VariableFont_wght.ttf')format("truetype");
+    font-display: swap;
   }
 
   html {
