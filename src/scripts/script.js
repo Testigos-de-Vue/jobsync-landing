@@ -16,21 +16,35 @@ const pricingSectionRef = document.getElementById("pricing-section");
 
 const navigate = (htmlElement, scrollLogicalPosition = "start") => htmlElement.scrollIntoView({ behavior: "smooth", block: scrollLogicalPosition });
 
-document.getElementById("product-nav-link").addEventListener("click", () => navigate(productSectionRef));
-document.getElementById("customer-nav-link").addEventListener("click", () => navigate(customerSectionRef));
-document.getElementById("pricing-nav-link").addEventListener("click", () => navigate(pricingSectionRef));
+document.getElementById("product-nav-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  navigate(productSectionRef);
+});
 
-document.getElementById("product-mobile-nav-link").addEventListener("click", () => {
+document.getElementById("customer-nav-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  navigate(customerSectionRef);
+});
+
+document.getElementById("pricing-nav-link").addEventListener("click", (event) => {
+  event.preventDefault();
+  navigate(pricingSectionRef)
+});
+
+document.getElementById("product-mobile-nav-link").addEventListener("click", (event) => {
+  event.preventDefault();
   toggleNavBar();
   navigate(productSectionRef);
 });
 
-document.getElementById("customer-mobile-nav-link").addEventListener("click", () => {
+document.getElementById("customer-mobile-nav-link").addEventListener("click", (event) => {
+  event.preventDefault();
   toggleNavBar();
   navigate(customerSectionRef);
 });
 
-document.getElementById("pricing-mobile-nav-link").addEventListener("click", () => {
+document.getElementById("pricing-mobile-nav-link").addEventListener("click", (event) => {
+  event.preventDefault();
   toggleNavBar();
   navigate(pricingSectionRef);
 });
