@@ -19,8 +19,25 @@
     <script src="./scripts/script.js" defer></script>
   </head>
   <body class="layout">
-    <header>
-      <span>Header section works!</span>
+    <header class="flex justify-around items-center box-shadow p-4">
+      <a href="/">
+        <img class="h-12 md:h-16 hover:scale-95 duration-200" src="./images/jobsync-logo.png" alt="JobSync logo">
+      </a>
+      <div class="hidden md:flex">
+        <nav class="font-medium">
+          <ul class="flex items-center gap-6">
+            <li><a id="product-nav-link" class="hover:text-primary hover:cursor-pointer">Product</a></li>
+            <li><a id="customer-nav-link" class="hover:text-primary hover:cursor-pointer">Customers</a></li>
+            <li><a id="pricing-nav-link" class="hover:text-primary hover:cursor-pointer">Pricing</a></li>
+            <li><a href="https://app-jobsync.netlify.app/" referrerpolicy="no-referrer" class="btn btn-secondary-fill rounded-full">Open App</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button id="toggle-navbar-btn" class="md:hidden rounded-lg p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>      
+      </button>
     </header>
     <main class="grid grid-cols-1 gap-18">
       <section class="grid grid-cols-1 md:grid-cols-2 py-12">
