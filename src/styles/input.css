@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.blob-bg {
+  background-image: url('../images/blob-haikei.svg');
+}
+
 @layer base {
   @font-face {
     font-family: Monserrat;

@@ -1021,6 +1021,10 @@ html {
   transition-duration: 200ms;
 }
 
+.blob-bg {
+  background-image: url('../images/blob-haikei.svg');
+}
+
 .hover\:scale-95:hover {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
