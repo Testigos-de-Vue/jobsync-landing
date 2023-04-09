@@ -19,6 +19,45 @@
     <script src="./scripts/script.js" defer></script>
   </head>
   <body class="layout">
+    <div id="responsive-nav-bar" class="hidden md:hidden">
+      <div class="w-full h-full fixed flex justify-center items-center bg-black/50 z-20">
+        <div class="flex flex-col justify-center items-center rounded-xl bg-white w-56 shadow-sm shadow-black p-8 gap-6">
+          <nav>
+            <ul class="flex flex-col font-semibold gap-4">
+              <li>
+                <a id="product-mobile-nav-link">
+                  <img src="./images/product.svg" alt="Computer with the product icon" class="w-6 h-6 inline">
+                  Product
+                </a>
+              </li>
+              <li>
+                <a id="customer-mobile-nav-link">
+                  <img src="./images/customer.svg" alt="Customer icon" class="w-6 h-6 inline">
+                  Customers
+                </a>
+              </li>
+              <li>
+                <a id="pricing-mobile-nav-link" >
+                  <img src="./images/pricing.svg" alt="Pricing icon" class="w-6 h-6 inline">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="https://app-jobsync.netlify.app/" referrerpolicy="no-referrer">
+                  <img src="./images/launch.svg" alt="Launch icon" class="w-6 h-6 inline">
+                  Open App
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button id="close-nav-bar-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
     <header class="flex justify-around items-center box-shadow p-4">
       <a href="/">
         <img class="h-12 md:h-16 hover:scale-95 duration-200" src="./images/jobsync-logo.png" alt="JobSync logo">
