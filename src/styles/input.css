@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.virtual-meeting-bg {
+  background-image: url('../images/virtual-meeting.jpg');
+}
+
 .blob-bg {
   background-image: url('../images/blob-haikei.svg');
 }
