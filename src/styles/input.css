@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .virtual-meeting-bg {
-  background-image: url('../images/virtual-meeting.jpg');
+  background-image: url('../images/virtual-meeting.webp');
 }
 
 .blob-bg {
