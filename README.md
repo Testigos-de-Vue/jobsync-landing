@@ -27,7 +27,7 @@
 
 ### Built With
 
-* [Tailwind CSS](https://tailwindcss.com/)
+* [![Tailwind][tailwind-shield]][tailwind-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -74,3 +74,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 JobSync - [@jobsync](https://twitter.com/jobsync) - devcontact@jobsync.com
 
 Testigos de Vue: [Organization's GitHub](https://github.com/github_username/repo_name)
+
+<!-- Badges and URLs -->
+[tailwind-url]: https://tailwindcss.com/
+[tailwind-shield]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
