@@ -49,6 +49,12 @@
                   Open App
                 </a>
               </li>
+              <li>
+                <a href="/es" referrerpolicy="no-referrer">
+                  <img src="./images/the-internet-svgrepo-com.svg" alt="Language switcher icon" class="w-6 h-6 inline fill-black">
+                  Español
+                </a>
+              </li>
             </ul>
           </nav>
           <button id="close-nav-bar-btn" aria-label="Close navigation bar">
@@ -69,7 +75,20 @@
             <li><a href="#product-section" id="product-nav-link" class="hover:text-primary hover:cursor-pointer">Product</a></li>
             <li><a href="#customer-section" id="customer-nav-link" class="hover:text-primary hover:cursor-pointer">Customers</a></li>
             <li><a href="#pricing-section" id="pricing-nav-link" class="hover:text-primary hover:cursor-pointer">Pricing</a></li>
-            <li><a href="https://jobsync-app.netlify.app/" referrerpolicy="no-referrer" class="btn btn-secondary-fill rounded-full">Open App</a></li>
+            <li class="flex items-center justify-center">
+              <a href="https://jobsync-app.netlify.app/" referrerpolicy="no-referrer" class="btn btn-secondary-fill rounded-full">Open App</a>
+              <div class="relative inline-block text-left">
+                <button type="button" class="px-3 py-2" id="language-switcher-btn">
+                  <img class="h-10" src="./images/the-internet-svgrepo-com.svg" alt="Language switcher icon">
+                </button>
+                <div id="language-menu" class="absolute rounded-md bg-white shadow-lg hidden" aria-orientation="vertical" aria-labelledby="menu-button">
+                  <div class="py-1" role="none">
+                    <a href="/" class="block px-4 py-2 text-sm">English</a>
+                    <a href="/es" class="block px-4 py-2 text-sm">Español</a>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
