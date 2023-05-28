@@ -44,9 +44,15 @@
                 </a>
               </li>
               <li>
-                <a href="https://app-jobsync.netlify.app/" referrerpolicy="no-referrer">
+                <a href="https://jobsync-app.netlify.app/" referrerpolicy="no-referrer">
                   <img src="../images/launch.svg" alt="Ícono de lanzamiento" class="w-6 h-6 inline">
                   Abrir App
+                </a>
+              </li>
+              <li>
+                <a href="/" referrerpolicy="no-referrer">
+                  <img src="../images/the-internet-svgrepo-com.svg" alt="Language switcher icon" class="w-6 h-6 inline fill-black">
+                  English
                 </a>
               </li>
             </ul>
@@ -69,7 +75,20 @@
             <li><a href="#product-section" id="product-nav-link" class="hover:text-primary hover:cursor-pointer">Producto</a></li>
             <li><a href="#customer-section" id="customer-nav-link" class="hover:text-primary hover:cursor-pointer">Clientes</a></li>
             <li><a href="#pricing-section" id="pricing-nav-link" class="hover:text-primary hover:cursor-pointer">Precio</a></li>
-            <li><a href="https://app-jobsync.netlify.app/" referrerpolicy="no-referrer" class="btn btn-secondary-fill rounded-full">Abrir App</a></li>
+            <li class="flex items-center justify-center">
+              <a href="https://jobsync-app.netlify.app/" referrerpolicy="no-referrer" class="btn btn-secondary-fill rounded-full">Abrir App</a>
+              <div class="relative inline-block text-left">
+                <button type="button" class="px-3 py-2" id="language-switcher-btn">
+                  <img class="h-10" src="../images/the-internet-svgrepo-com.svg" alt="Language switcher icon">
+                </button>
+                <div id="language-menu" class="absolute rounded-md bg-white shadow-lg hidden" aria-orientation="vertical" aria-labelledby="menu-button">
+                  <div class="py-1" role="none">
+                    <a href="/" class="block px-4 py-2 text-sm">English</a>
+                    <a href="/es" class="block px-4 py-2 text-sm">Español</a>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
       </div>
@@ -85,7 +104,7 @@
           <div class="text-center md:text-left">
             <h1 class="section-title md:text-left">El Software Más <br><span id="title-keyword" class="text-primary"></span><span class="text-secondary">|</span><br> de Reclutamiento y<br>Búsqueda de Talento</h1>
             <p class="text-3xl my-6">Miles de reclutadores ya utilizan JobSync<br>para hacer el proceso de reclutamiento<br>fluido y asequible.</p>
-            <a href="https://app-jobsync.netlify.app/" referrerpolicy="no-referrer" class="btn-primary-fill w-fit rounded-full font-semibold">Registrarse</a>
+            <a href="https://jobsync-app.netlify.app/register" referrerpolicy="no-referrer" class="btn-primary-fill w-fit rounded-full font-semibold">Registrarse</a>
           </div>
         </div>
         <div class="flex justify-center items-center">
@@ -226,7 +245,7 @@
         id="pricing-section"
         class="flex flex-col justify-center items-center gap-6"
       >
-        <h2 class="section-title">
+        <h2 class="section-title text-4xl">
           <span class="text-primary">Un</span> plan,
           <span class="text-primary">Todas</span> las funcionalidades
         </h2>
@@ -237,7 +256,7 @@
           >
             <h3 class="text-3xl font-bold mb-12">Gratis</h3>
             <a
-              href="https://app-jobsync.netlify.app/"
+              href="https://jobsync-app.netlify.app/register"
               referrerpolicy="no-referrer"
               class="btn-primary-fill rounded-full"
               >Prueba Gratis</a
@@ -285,7 +304,7 @@
               $420 <span class="text-sm text-gray-600">/ año</span>
             </p>
             <a
-              href="https://app-jobsync.netlify.app/"
+              href="https://jobsync-app.netlify.app/register"
               referrerpolicy="no-referrer"
               class="btn-primary-fill rounded-full"
               >Adquirir Premium</a
@@ -334,12 +353,24 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-5xl text-center font-bold">¿Todavía tienes dudas?</h2>
+          <p class="text-center">Vea el siguiente video que hemos preparado para ti acerca de nuestro producto.</p>
+          <img src="../images/yt-video-placeholder.png" alt="Imagen temporal para el video acerca del producto">
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="text-5xl text-center font-bold">¿Quieres saber más sobre nuestra startup?</h2>
+          <p class="text-center">Vea el siguiente video que hemos preparado para usted sobre nosotros y nuestro compromiso con nuestros usuarios.</p>
+          <img src="../images/yt-video-placeholder.png" alt="Imagen temporal para el video acerca del equipo">
+        </div>
+      </section>
       <section class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1">
         <div class="flex flex-col items-center justify-center bg-primary text-white p-6 md:p-12">
           <div class="w-2/3">
             <h2 class="text-5xl font-bold">Comienza hoy mismo</h2>
             <p class="my-6">Únete a los <span class="font-semibold">30,000</span> reclutadores y candidatos que ya están usando JobSync en sus vidas profesionales.</p>
-            <a class="btn-secondary rounded-full" href="https://app-jobsync.netlify.app/" referrerpolicy="no-referrer">Registrarse</a>
+            <a class="btn-secondary rounded-full" href="https://jobsync-app.netlify.app/register" referrerpolicy="no-referrer">Registrarse</a>
           </div>
         </div>
         <div class="bg-cover bg-center virtual-meeting-bg h-96"></div>
@@ -352,17 +383,16 @@
         <img class="h-12" src="../images/jobsync-logo.png" alt="JobSync logo" />
         <ul class="flex items-center gap-6">
           <li>
-            <a href="#pricing-section" id="pricing-footer-nav-link" class="hover:cursor-pointer"
-              >Precio</a
-            >
+            <a href="#pricing-section" id="pricing-footer-nav-link" class="hover:cursor-pointer">Precio</a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/company/jobsyncio"
               target="_blank"
               referrerpolicy="no-referrer"
-              >Trabajo</a
             >
+              Trabajo
+            </a>
           </li>
           <li><a href="/es/terminos-de-servicio">Términos de servicio</a></li>
         </ul>

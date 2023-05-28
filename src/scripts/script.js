@@ -50,3 +50,13 @@ document.getElementById("pricing-mobile-nav-link").addEventListener("click", (ev
 });
 
 document.getElementById("pricing-footer-nav-link").addEventListener("click", () => navigate(pricingSectionRef));
+
+const toggleLanguageSwitcher = document.getElementById("language-switcher-btn");
+const languageSwitcherModal = document.getElementById("language-menu");
+
+const toggleLanguageNav = () => {
+  languageSwitcherModal.classList.toggle("hidden");
+  document.body.style.overflow = document.body.style.overflow.length ? "" : "hidden";
+}
+
+toggleLanguageSwitcher.addEventListener("click", toggleLanguageNav);
